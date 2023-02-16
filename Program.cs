@@ -1,6 +1,10 @@
 global using dotNet_rpg.Models;
 global using dotNet_rpg.Services.CharacterService;
 global using dotNet_rpg.Dtos.Character;
+global using AutoMapper;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -10,8 +14,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-///new istance 
+
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 builder.Services.AddScoped<ICharacterService, CharacterService>();
+
 
 var app = builder.Build();
 

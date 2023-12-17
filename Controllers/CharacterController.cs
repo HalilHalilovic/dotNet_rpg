@@ -6,7 +6,7 @@ namespace dotNet_rpg.Controllers
 {
 
  /// <summary>
- ///  hello guys this is a git test
+ ///  hello guys this is a git test BRANCH
  /// </summary>
     [ApiController]
     [Route("[controller]")]

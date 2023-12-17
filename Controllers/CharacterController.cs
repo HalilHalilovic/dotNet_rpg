@@ -5,6 +5,9 @@ namespace dotNet_rpg.Controllers
 
 {
 
+ /// <summary>
+ ///  hello guys this is a git test
+ /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class CharacterController : ControllerBase
